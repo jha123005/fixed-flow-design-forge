@@ -1,10 +1,11 @@
+
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { ChevronDown, ChevronUp, ArrowDown, ArrowUp } from "lucide-react";
+import { ChevronDown, ChevronUp, ArrowDown, ArrowUp, ChevronLeft, ChevronRight, Play, Linkedin, Facebook, Twitter } from "lucide-react";
 
 const Index = () => {
   const [expandedModule, setExpandedModule] = useState<string | null>(null);
@@ -85,6 +86,152 @@ const Index = () => {
     "Stay ahead in your field by mastering industry relevant skills through our online sessions",
     "Dive into real challenges from today's businesses, gaining hands-on experience",
     "Tap into a wealth of career opportunities through our established network"
+  ];
+
+  const successStories = [
+    {
+      name: "Abhiram",
+      currentRole: "Senior Social Media Manager",
+      currentCompany: "Ogilvy",
+      previousRole: "Senior Social Media Manager",
+      previousCompany: "Infinity Learn",
+      avatar: "/lovable-uploads/c592103f-149b-4fdd-acbc-467509f71590.png"
+    },
+    {
+      name: "Teja Vanama",
+      currentRole: "Deputy Manager (Geology)",
+      currentCompany: "NMDC Limited",
+      previousRole: "Assistant Manager",
+      previousCompany: "NMDC Limited",
+      avatar: "/lovable-uploads/c592103f-149b-4fdd-acbc-467509f71590.png"
+    },
+    {
+      name: "Sujay Putta",
+      currentRole: "Chief Executive Officer",
+      currentCompany: "The Kaliq",
+      previousRole: "Chief Brand Designer & Founder",
+      previousCompany: "SCGB Solutions",
+      avatar: "/lovable-uploads/c592103f-149b-4fdd-acbc-467509f71590.png"
+    },
+    {
+      name: "Ravi Shankar",
+      currentRole: "VP - Products & Marketing",
+      currentCompany: "STL - Sterlite Technologies Limited",
+      previousRole: "Vice President - Products & Marketing",
+      previousCompany: "Skyvera",
+      avatar: "/lovable-uploads/c592103f-149b-4fdd-acbc-467509f71590.png"
+    },
+    {
+      name: "Aditya Suri",
+      currentRole: "Senior Associate",
+      currentCompany: "alliantgroup",
+      previousRole: "Associate Manager",
+      previousCompany: "Google Operations Center",
+      avatar: "/lovable-uploads/c592103f-149b-4fdd-acbc-467509f71590.png"
+    }
+  ];
+
+  const alumniCompanies = [
+    { name: "Google", logo: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" },
+    { name: "Swiggy", logo: "https://upload.wikimedia.org/wikipedia/commons/1/12/Swiggy_logo.svg" },
+    { name: "Zoho", logo: "https://upload.wikimedia.org/wikipedia/commons/3/37/Zoho_logo.svg" },
+    { name: "Philips", logo: "https://upload.wikimedia.org/wikipedia/commons/5/52/Philips_logo_new.svg" },
+    { name: "Microsoft", logo: "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" },
+    { name: "Zomato", logo: "https://upload.wikimedia.org/wikipedia/commons/7/75/Zomato_logo.png" },
+    { name: "Paytm", logo: "https://upload.wikimedia.org/wikipedia/commons/2/24/Paytm_Logo_%28standalone%29.svg" },
+    { name: "Disney+ Hotstar", logo: "https://upload.wikimedia.org/wikipedia/commons/1/1e/Disney%2B_Hotstar_logo.svg" },
+    { name: "Snapdeal", logo: "https://upload.wikimedia.org/wikipedia/commons/8/80/Snapdeal_logo.svg" },
+    { name: "APNA", logo: "https://upload.wikimedia.org/wikipedia/commons/a/a5/Apna_logo.svg" },
+    { name: "Walmart", logo: "https://upload.wikimedia.org/wikipedia/commons/c/ca/Walmart_logo.svg" },
+    { name: "Uber", logo: "https://upload.wikimedia.org/wikipedia/commons/c/cc/Uber_logo_2018.png" },
+    { name: "Philips", logo: "https://upload.wikimedia.org/wikipedia/commons/5/52/Philips_logo_new.svg" },
+    { name: "Adobe", logo: "https://upload.wikimedia.org/wikipedia/commons/8/8d/Adobe_Corporate_Logo.svg" }
+  ];
+
+  const testimonials = [
+    {
+      text: "Excited to announce my graduation from the UX Career Acceleration Program by GrowthSchool under the mentorship of Anuradeep. It's been an enriching journey exploring UX concepts, design tools, and the realm of product design.",
+      author: "Abhishika K.N",
+      role: "Engineer - 2 - Version",
+      avatar: "/lovable-uploads/c592103f-149b-4fdd-acbc-467509f71590.png",
+      hasVideo: false
+    },
+    {
+      text: "Just completed Vaibhav Sisinty's LinkedIn workshop at GrowthSchool - mind officially blown! Ready to share the top three secrets that turned my LinkedIn game around.",
+      author: "Rahul Phathani",
+      role: "Social Media Strategist, LinkedIn",
+      avatar: "/lovable-uploads/c592103f-149b-4fdd-acbc-467509f71590.png",
+      hasVideo: false
+    },
+    {
+      text: "I landed my first international client with Growth School's LinkedIn Workshop. Here are the things I discovered over the last 30 days using Growth School LinkedIn Workshop:",
+      author: "Akash Pandey",
+      role: "Instagram Growth Coach, Instagram",
+      avatar: "/lovable-uploads/c592103f-149b-4fdd-acbc-467509f71590.png",
+      hasVideo: false
+    },
+    {
+      text: "Hey Folks Excited to start this new year with a bang with the Digital Marketing Program with GrowthSchool. All set to begin the journey with the Learners on 7th Jan!",
+      author: "sumit varma",
+      role: "Media Account Specialist Head, Google",
+      avatar: "/lovable-uploads/c592103f-149b-4fdd-acbc-467509f71590.png",
+      hasVideo: false
+    },
+    {
+      text: "I am thrilled to share that I have developed a dynamic and insightful dashboard on Power BI, providing real-time predictions and analysis of the USD-INR exchange rates.",
+      author: "Nidhi worah",
+      role: "Computer Vision Engineer, Ignitus",
+      avatar: "/lovable-uploads/c592103f-149b-4fdd-acbc-467509f71590.png",
+      hasVideo: true
+    },
+    {
+      text: "Hey Folks! HNY 2024! Excited to start this new year with a bang with the Digital Marketing Program with GrowthSchool. All set to begin the journey with the Learners on 7th Jan!",
+      author: "Tushar Baweja",
+      role: "Investigation Specialist 1, Amazon",
+      avatar: "/lovable-uploads/c592103f-149b-4fdd-acbc-467509f71590.png",
+      hasVideo: true
+    },
+    {
+      text: "Hey Folks! HNY 2024! Excited to start this new year with a bang with the Digital Marketing Program with GrowthSchool.",
+      author: "Kaushik Sen",
+      role: "Digital Marketing Strategist, Google",
+      avatar: "/lovable-uploads/c592103f-149b-4fdd-acbc-467509f71590.png",
+      hasVideo: false
+    }
+  ];
+
+  const upskillFeatures = [
+    {
+      icon: "📹",
+      title: "Self-paced video content",
+      description: "Master new skills on your schedule with our flexible, self-paced video content."
+    },
+    {
+      icon: "🎯",
+      title: "Office hours with Mentors for clearing blockers",
+      description: "Overcome challenges fast with dedicated mentor office hours."
+    },
+    {
+      icon: "💼",
+      title: "Project driven approach to achieve outcomes",
+      description: "Gain practical skills through our project-driven approach for real results."
+    },
+    {
+      icon: "👥",
+      title: "Access to network of 1000+ learners",
+      description: "Tap into our vibrant network of learners, enhancing your learning experience."
+    }
+  ];
+
+  const brandLogos = [
+    { name: "Google", color: "bg-blue-50" },
+    { name: "Shiprocket", color: "bg-green-50" },
+    { name: "Domino's", color: "bg-red-50" },
+    { name: "Aditya Birla", color: "bg-orange-50" },
+    { name: "Dr.Reddy's", color: "bg-purple-50" },
+    { name: "Uber", color: "bg-gray-50" },
+    { name: "Shell", color: "bg-yellow-50" },
+    { name: "Razorpay", color: "bg-blue-50" }
   ];
 
   return (
@@ -578,6 +725,252 @@ const Index = () => {
           </div>
         </div>
       </div>
+
+      {/* Success Stories Section - Full Width */}
+      <section className="py-16 px-6 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex items-center justify-between mb-12">
+            <div>
+              <p className="text-sm text-gray-600 font-medium mb-2">SUCCESS STORIES</p>
+              <h2 className="text-3xl font-bold">Our Learners at Leading Companies</h2>
+            </div>
+            <div className="flex items-center space-x-2">
+              <Button variant="outline" size="sm" className="rounded-full">
+                <ChevronLeft className="w-4 h-4" />
+              </Button>
+              <Button variant="outline" size="sm" className="rounded-full">
+                <ChevronRight className="w-4 h-4" />
+              </Button>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-5 gap-6">
+            {successStories.map((story, index) => (
+              <Card key={index} className="bg-white border border-gray-200 p-6">
+                <CardContent className="p-0">
+                  <div className="flex items-center space-x-3 mb-4">
+                    <Avatar className="w-12 h-12">
+                      <AvatarImage src={story.avatar} />
+                      <AvatarFallback>{story.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
+                    </Avatar>
+                    <div>
+                      <h3 className="font-semibold text-sm">{story.name}</h3>
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-3">
+                    <div>
+                      <p className="text-sm font-medium text-gray-900">{story.currentRole}</p>
+                      <p className="text-sm text-gray-600">{story.currentCompany}</p>
+                    </div>
+                    
+                    <div className="w-6 h-6 bg-teal-600 rounded-full flex items-center justify-center">
+                      <ChevronDown className="w-4 h-4 text-white" />
+                    </div>
+                    
+                    <div>
+                      <p className="text-sm font-medium text-gray-900">{story.previousRole}</p>
+                      <p className="text-sm text-gray-600">{story.previousCompany}</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Alumni Companies Section - Full Width */}
+      <section className="py-16 px-6 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl font-bold mb-12">Our alumni work at top brands like</h2>
+          
+          <div className="grid grid-cols-7 gap-8 items-center mb-8">
+            {alumniCompanies.slice(0, 7).map((company, index) => (
+              <div key={index} className="flex items-center justify-center h-16">
+                <span className="text-lg font-semibold text-gray-700">{company.name}</span>
+              </div>
+            ))}
+          </div>
+          
+          <div className="grid grid-cols-7 gap-8 items-center">
+            {alumniCompanies.slice(7, 14).map((company, index) => (
+              <div key={index} className="flex items-center justify-center h-16">
+                <span className="text-lg font-semibold text-gray-700">{company.name}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section - Full Width */}
+      <section className="py-16 px-6 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-12">
+            <p className="text-sm text-gray-600 font-medium mb-2">HEAR IT FROM THEM</p>
+            <h2 className="text-3xl font-bold mb-2">Ambitious People ❤️ GrowthSchool</h2>
+          </div>
+
+          <div className="grid md:grid-cols-4 gap-6 mb-8">
+            {testimonials.slice(0, 4).map((testimonial, index) => (
+              <Card key={index} className="bg-white border border-gray-200 p-6">
+                <CardContent className="p-0">
+                  <div className="flex items-center justify-between mb-4">
+                    <Linkedin className="w-6 h-6 text-blue-600" />
+                  </div>
+                  
+                  <p className="text-sm text-gray-700 mb-4 line-clamp-4">{testimonial.text}</p>
+                  
+                  <div className="flex items-center space-x-3">
+                    <Avatar className="w-10 h-10">
+                      <AvatarImage src={testimonial.avatar} />
+                      <AvatarFallback>{testimonial.author.split(' ').map(n => n[0]).join('')}</AvatarFallback>
+                    </Avatar>
+                    <div>
+                      <h4 className="font-semibold text-sm">{testimonial.author}</h4>
+                      <p className="text-xs text-gray-600">{testimonial.role}</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6 mb-8">
+            {testimonials.slice(4, 7).map((testimonial, index) => (
+              <div key={index} className="relative">
+                {testimonial.hasVideo && (
+                  <div className="bg-gray-200 rounded-lg h-48 flex items-center justify-center mb-4 relative">
+                    <Play className="w-12 h-12 text-white bg-black bg-opacity-50 rounded-full p-3" />
+                    <div className="absolute bottom-4 left-4 text-white">
+                      <p className="font-semibold">{testimonial.author}</p>
+                      <p className="text-sm">{testimonial.role}</p>
+                    </div>
+                  </div>
+                )}
+                
+                <Card className="bg-white border border-gray-200 p-6">
+                  <CardContent className="p-0">
+                    <div className="flex items-center justify-between mb-4">
+                      <Linkedin className="w-6 h-6 text-blue-600" />
+                    </div>
+                    
+                    <p className="text-sm text-gray-700 mb-4">{testimonial.text}</p>
+                    
+                    <div className="flex items-center space-x-3">
+                      <Avatar className="w-10 h-10">
+                        <AvatarImage src={testimonial.avatar} />
+                        <AvatarFallback>{testimonial.author.split(' ').map(n => n[0]).join('')}</AvatarFallback>
+                      </Avatar>
+                      <div>
+                        <h4 className="font-semibold text-sm">{testimonial.author}</h4>
+                        <p className="text-xs text-gray-600">{testimonial.role}</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center">
+            <Button variant="outline" className="px-8 py-3">
+              See Our Wall of Love
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Team Upskilling Section - Full Width */}
+      <section className="py-16 px-6 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex items-center justify-between mb-12">
+            <div className="max-w-3xl">
+              <p className="text-sm text-gray-600 font-medium mb-2">SKILL UP, SCALE UP</p>
+              <h2 className="text-4xl font-bold mb-4">Upskill your Team; Upscale your Business</h2>
+              <p className="text-lg text-gray-600 mb-8">
+                Elevate your team's skills to fuel efficiency and ongoing innovation for sustained business growth.
+              </p>
+              
+              <h3 className="text-xl font-semibold mb-8">Why learn with GrowthSchool?</h3>
+            </div>
+            <div className="flex-shrink-0">
+              <Button className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-3">
+                Upskill Your Team
+              </Button>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12">
+            {upskillFeatures.map((feature, index) => (
+              <div key={index} className="flex items-start space-x-4">
+                <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <span className="text-2xl">{feature.icon}</span>
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
+                  <p className="text-gray-600">{feature.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Brand Collaboration Section - Full Width */}
+      <section className="py-16 px-6 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-2xl font-bold mb-12">Brands in Collaboration</h2>
+          
+          <div className="grid grid-cols-8 gap-6">
+            {brandLogos.map((brand, index) => (
+              <div key={index} className={`${brand.color} rounded-lg p-6 flex items-center justify-center h-20`}>
+                <span className="font-semibold text-gray-700">{brand.name}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Newsletter Section - Full Width */}
+      <section className="py-16 px-6 bg-teal-900 text-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center space-x-8">
+              <div className="flex items-center space-x-2">
+                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+                  <span className="text-teal-900 font-bold text-lg">G</span>
+                </div>
+                <span className="font-semibold text-2xl">Growth School</span>
+              </div>
+              
+              <div className="flex items-center space-x-6">
+                <Facebook className="w-6 h-6 text-gray-300 hover:text-white cursor-pointer" />
+                <Twitter className="w-6 h-6 text-gray-300 hover:text-white cursor-pointer" />
+                <Linkedin className="w-6 h-6 text-gray-300 hover:text-white cursor-pointer" />
+              </div>
+            </div>
+
+            <div className="max-w-md">
+              <h3 className="text-xl font-semibold mb-2">Best Kept Secrets ✨</h3>
+              <p className="text-gray-200 mb-4 text-sm">
+                Be the first to find out about the newest programs, workshops, and community activities - plus industry news, articles, and special reports.
+              </p>
+              
+              <div className="flex space-x-2">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  className="flex-1 px-4 py-2 rounded-lg text-gray-900 placeholder-gray-500"
+                />
+                <Button className="bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-2">
+                  Subscribe
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12 px-6">
